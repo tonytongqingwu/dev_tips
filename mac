@@ -1,0 +1,2 @@
+# to keep VPN on
+System Preferences->Battery->Check "Prevent Automatically Sleep", so won't loss VPN connection.
