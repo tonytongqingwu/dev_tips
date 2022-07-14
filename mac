@@ -1,2 +1,8 @@
 # to keep VPN on
 System Preferences->Battery->Check "Prevent Automatically Sleep", so won't loss VPN connection.
+
+# Apps_VV_guidelines
+- VPN must be 1_Users group
+- Pull code, use Terminal, type "git" will install from xcode(Apple git binary).
+Other option https://git-scm.com/download/mac
+- Or download sourceTree here:  https://www.sourcetreeapp.com/
