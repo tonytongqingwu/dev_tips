@@ -6,3 +6,33 @@ System Preferences->Battery->Check "Prevent Automatically Sleep", so won't loss 
 - Pull code, use Terminal, type "git" will install from xcode(Apple git binary).
 Other option https://git-scm.com/download/mac
 - Or download sourceTree here:  https://www.sourcetreeapp.com/
+- Big Sur/Monterey OS for zsh, should be match java version, ex 221
+echo "export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_321)" >> ~/.zshrc
+
+- exec zsh to restart zsh.
+- update your account to use zsh, please run `chsh -s /bin/zsh`.
+- After install brew, following screen for setup path of brew.
+- Check appium version: 
+  appium -v
+- fix issue:
+
+brew create "https://github.com/libimobiledevice/libimobiledevice-glue.git"
+brew edit libimobiledevice-glue
+brew install --HEAD libimobiledevice-glue
+
+If this step fails with message configure: error: 
+
+Package requirements (libimobiledevice-glue-1.0 >= 1.0.0) were not met:, see solution here: libimobiledevice/libimobiledevice#1217)
+
+Add this line:
+
+depends_on "libimobiledevice-glue"
+
+to :
+
+brew edit libimobiledevice
+
+- typo:
+python3 --version
+- adb not working
+
