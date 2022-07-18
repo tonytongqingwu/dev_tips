@@ -9,7 +9,7 @@ Other option https://git-scm.com/download/mac
 - Big Sur/Monterey OS for zsh, should be match java version, ex 221
 echo "export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_321)" >> ~/.zshrc
 
-- exec zsh to restart zsh.
+- source ~/.zshrc to make new PATH work
 - update your account to use zsh, please run `chsh -s /bin/zsh`.
 - After install brew, following screen for setup path of brew.
 - Check appium version: 
@@ -34,5 +34,6 @@ brew edit libimobiledevice
 
 - typo:
 python3 --version
-- adb not working
+- adb not working, due to PATH has "space" , just add "" to , like
+export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
 
