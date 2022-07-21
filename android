@@ -1,0 +1,13 @@
+# To run automation testing on a real device
+Start your Android device.
+
+Tap Settings, and then General About Device.
+
+Tap the Build number seven times to enable Developer option.
+
+Return to the Settings menu and select Developer option.
+
+Tap the Developer options to turn on USB Debugging from the menu on the next screen.
+
+# ADB
+tt0622@WH04VVD4JH G7X_Tests % adb devices
