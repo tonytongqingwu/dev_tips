@@ -9,5 +9,12 @@ Return to the Settings menu and select Developer option.
 
 Tap the Developer options to turn on USB Debugging from the menu on the next screen.
 
+Also when connect the device, make sure the dialog to approve for debug, so the device will show from adb devices command
+
 # ADB
 tt0622@WH04VVD4JH G7X_Tests % adb devices
+
+# Install apk
+adb install ~/Downloads/g7.apk
+
+
